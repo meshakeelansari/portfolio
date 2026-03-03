@@ -48,28 +48,28 @@ const Layout = () => {
 
     // Alternative with image sources
     const imageLogos = [
-        { src: "/HtmlLogo.png", alt: "HTML", href: "https://company1.com" },
-        { src: "/CssLogo.png", alt: "CSS", href: "https://company2.com" },
-        { src: "/JsLogo.png", alt: "JavaScript", href: "https://company3.com" },
-        { src: "/ReactLogo.png", alt: "React", href: "https://company3.com" },
-        { src: "/TailwindLogo.png", alt: "Tailwind", href: "https://company3.com" },
-        { src: "/BootstrapLogo.png", alt: "Bootstrap", href: "https://company3.com" },
-        { src: "/MuiLogo.png", alt: "MUI", href: "https://company3.com" },
+        { src: `${import.meta.env.BASE_URL}HtmlLogo.png`, alt: "HTML", href: "https://company1.com" },
+        { src: `${import.meta.env.BASE_URL}CssLogo.png`, alt: "CSS", href: "https://company2.com" },
+        { src: `${import.meta.env.BASE_URL}JsLogo.png`, alt: "JavaScript", href: "https://company3.com" },
+        { src: `${import.meta.env.BASE_URL}ReactLogo.png`, alt: "React", href: "https://company3.com" },
+        { src: `${import.meta.env.BASE_URL}TailwindLogo.png`, alt: "Tailwind", href: "https://company3.com" },
+        { src: `${import.meta.env.BASE_URL}BootstrapLogo.png`, alt: "Bootstrap", href: "https://company3.com" },
+        { src: `${import.meta.env.BASE_URL}MuiLogo.png`, alt: "MUI", href: "https://company3.com" },
     ];
     const imageLogos2 = [
-        { src: "/DotNetLogo.png", alt: "Dot Net", href: "https://company1.com" },
-        { src: "/MsSqlLogo.png", alt: "MS SQL", href: "https://company2.com" },
-        { src: "/PhpLogo.png", alt: "PHP", href: "https://company3.com" },
-        { src: "/MySqlLogo.png", alt: "MySQL", href: "https://company3.com" },
-        { src: "/GitBashLogo.png", alt: "GitBash", href: "https://company3.com" },
-        { src: "/PostmanLogo.png", alt: "Postman", href: "https://company3.com" },
-        { src: "/VsCodeLogo.png", alt: "VS Code", href: "https://company3.com" },
-        { src: "/VsStudioLogo.png", alt: "VS Studio", href: "https://company3.com" },
+        { src: `${import.meta.env.BASE_URL}DotNetLogo.png`, alt: "Dot Net", href: "https://company1.com" },
+        { src: `${import.meta.env.BASE_URL}MsSqlLogo.png`, alt: "MS SQL", href: "https://company2.com" },
+        { src: `${import.meta.env.BASE_URL}PhpLogo.png`, alt: "PHP", href: "https://company3.com" },
+        { src: `${import.meta.env.BASE_URL}MySqlLogo.png`, alt: "MySQL", href: "https://company3.com" },
+        { src: `${import.meta.env.BASE_URL}GitBashLogo.png`, alt: "GitBash", href: "https://company3.com" },
+        { src: `${import.meta.env.BASE_URL}PostmanLogo.png`, alt: "Postman", href: "https://company3.com" },
+        { src: `${import.meta.env.BASE_URL}VsCodeLogo.png`, alt: "VS Code", href: "https://company3.com" },
+        { src: `${import.meta.env.BASE_URL}VsStudioLogo.png`, alt: "VS Studio", href: "https://company3.com" },
     ];
 
     const items = [
         {
-            image: '/muiLogo.png',
+            image: `${import.meta.env.BASE_URL}muiLogo.png`,
             title: 'Alex Rivera',
             subtitle: 'Full Stack Developer',
             handle: '@alexrivera',
@@ -226,7 +226,7 @@ const Layout = () => {
                                     background: "linear-gradient(111.6deg, rgba(114,167,232,1) 9.4%, rgba(253,129,82,1) 43.9%, rgba(253,129,82,1) 54.8%, rgba(249,202,86,1) 86.3%)",
                                 }}>
                                     <TiltedCard
-                                        imageSrc="/ShakeelImage.png"
+                                        imageSrc={`${import.meta.env.BASE_URL}ShakeelImage.png`}
                                         altText="Shakeel Ansari - Profile Photo"
                                         captionText="Shakeel Ansari"
                                         containerHeight="350px"
@@ -318,7 +318,7 @@ const Layout = () => {
                                         <PixelTransition
                                             firstContent={
                                                 <img
-                                                    src="/ShakeelImage.png"
+                                                    src={`${import.meta.env.BASE_URL}ShakeelImage.png`}
                                                     alt="default pixel transition content, a cat!"
                                                     style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "100%" }}
                                                 />
