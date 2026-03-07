@@ -77,7 +77,6 @@ portfolio/
 
 ## 📸 Preview
 
-Add a screenshot of your portfolio here:
 <img width="920" height="613" alt="Portfolio Thumnail" src="https://github.com/user-attachments/assets/a988e737-2e75-45b7-bb0e-96a769b574d4" />
 
 ---
